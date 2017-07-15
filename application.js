@@ -40,7 +40,7 @@ application.get('/index/register', (request, response) => {
     return response.status(200).render('register');
 });
 
-application.get('/dashboard', async function(request, response) {
+application.get('/dashboard', async (request, response) => {
     if (!request.session.isAuthenticated) {
         return response.redirect('/index');
     } else {
