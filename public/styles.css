@@ -1,0 +1,38 @@
+h1 {
+    color: blue;
+}
+
+input, textarea {
+    width: 30%;
+    margin: 10px;
+    font-size: 18px;
+}
+
+textarea {
+    font-size: 12px;
+}
+
+button {
+    font-size: 20px;
+    width: 30.35%;
+    margin: 10px;
+}
+
+.snippets {
+    border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.view-snippet {
+    width: 20%;
+}
+
+.language-button, .tag-button{
+    width: 10%;
+}
+
+.language-select, #tag-text  {
+    font-size: 18px;
+    width: 10%;
+}

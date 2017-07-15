@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "andogar",
+    "password": null,
+    "database": "snippet_organizer",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "andogar",
+    "password": null,
+    "database": "snippet_organizer",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "andogar",
+    "password": null,
+    "database": "snippet_organizer",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snippet Organizer</title>
+    <link rel="stylesheet" href="../public//styles.css">
+</head>
+
+<header>
+    <a href="/dashboard">Home</a>
+    <a href="/dashboard/add-snippet">Add a code snippet</a>
+</header>
+
+<body>
+
+    <h1>Your Snippets</h1>
+    <div class="language-box">
+        <h3>Filter by Language</h3>
+        <select class="language-select" name="language">
+            <option class="language-choice" value="all">All Snippets</option>
+            {{#languages}}
+            <option class="language-choice" value="{{.}}">{{.}}</option>
+            {{/languages}}
+        </select>
+        <button class="language-button" type="submit">Search</button>
+    </div>
+
+    <div class="tag-box">
+        <form id="tag-form">
+            <h3>Search by tag</h3>
+            <input type="text" id="tag-text" placeholder="Enter a tag here">
+            <button class="tag-button" type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="all-snippets"></div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="../public/main.js"></script>
+
+</body>
+
+</html>

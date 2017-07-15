@@ -1,0 +1,27 @@
+{
+  "name": "week-eight-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "program.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node program.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "crypto": "0.0.3",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "file-system": "^2.2.2",
+    "mocha": "^3.4.2",
+    "moment": "^2.18.1",
+    "pg": "^6.4.0",
+    "sequelize": "^4.3.2",
+    "sequelizer": "^1.1.3",
+    "supertest": "^3.0.0"
+  }
+}

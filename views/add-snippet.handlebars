@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snippet Organizer</title>
+    <link rel="stylesheet" href="../public//styles.css">
+</head>
+
+<header>
+    <a href="/dashboard">Home</a>
+    <a href="/dashboard/add-snippet">Add a code snippet</a>
+</header>
+
+<body>
+    <form id="add-snippet">
+        <input type="text" id="add-name" placeholder="Name your snippet" /> <br />
+        <textarea id="add-content" rows="5" cols="50" placeholder="Enter your snippet" /></textarea> <br />
+        <input type="text" id="add-notes" placeholder="Add notes about your snippet (optional)" /> <br />
+        <input type="text" id="add-language" placeholder="Add snippet code language" /> <br />
+        <input type="text" id="add-tag" placeholder="Add any related tags to the snippet" /> <br />
+        <button type="submit">Add a snippet</button>
+    </form>
+    <div id="add-snippet-success"></div>
+    <div id="add-snippet-errors"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="../public/main.js"></script>
+</body>
+
+</html>

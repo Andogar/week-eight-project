@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Snippet Organizer</title>
+    <link rel="stylesheet" href="../public//styles.css">
+</head>
+
+<header>
+    <a href="/dashboard">Home</a>
+    <a href="/dashboard/add-snippet">Add a code snippet</a>
+</header>
+
+<body>
+
+    <h1>Here's your snippet!</h1>
+
+    <div class="single-snippet">
+        <h2>{{name}}</h2>
+        <p>{{content}}</p>
+        <p>{{language}}</p>
+        <p>Added on {{date}} by {{addedBy}}</p>
+        {{#if notes}}
+        <p>Notes: {{notes}}</p>
+        {{/if}}
+        {{#if tags}}
+        <p>Related tags: {{tags}}</p>
+        {{/if}}
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="../public/main.js"></script>
+
+</body>
+
+</html>
