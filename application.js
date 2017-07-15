@@ -40,7 +40,7 @@ application.get('/index/register', (request, response) => {
     return response.status(200).render('register');
 });
 
-application.get('/dashboard', async (request, response) => {
+application.get('/dashboard', asyncWrap(async (request, response) => {
     if (!request.session.isAuthenticated) {
         return response.redirect('/index');
     } else {
@@ -59,7 +59,7 @@ application.get('/dashboard', async (request, response) => {
 
         return response.status(200).render('dashboard', model);
     }
-});
+}));
 
 application.get('/dashboard/add-snippet', (request, response) => {
     if (!request.session.isAuthenticated) {
