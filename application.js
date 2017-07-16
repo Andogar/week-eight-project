@@ -59,7 +59,7 @@ application.get('/dashboard', async (request, response) => {
 
         return response.status(200).render('dashboard', model);
     }
-}));
+});
 
 application.get('/dashboard/add-snippet', (request, response) => {
     if (!request.session.isAuthenticated) {
